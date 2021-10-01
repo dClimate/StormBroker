@@ -1,0 +1,143 @@
+{
+  "resources": [
+    "soundfx.ogg",
+    "soundfx.mp3"
+  ],
+  "spritemap": {
+    "New_SFX_ClickButton": {
+      "start": 0,
+      "end": 2.75,
+      "loop": false
+    },
+    "New_SFX_ClickConfirm": {
+      "start": 4,
+      "end": 6.5,
+      "loop": false
+    },
+    "New_SFX_Demotion": {
+      "start": 8,
+      "end": 8.899160997732427,
+      "loop": false
+    },
+    "New_SFX_Error": {
+      "start": 10,
+      "end": 11.819206349206349,
+      "loop": false
+    },
+    "New_SFX_ForecastsLoop": {
+      "start": 13,
+      "end": 14.849342403628118,
+      "loop": false
+    },
+    "New_SFX_Hover": {
+      "start": 16,
+      "end": 17.505260770975056,
+      "loop": false
+    },
+    "New_SFX_HurricaneEnd": {
+      "start": 19,
+      "end": 19.98455782312925,
+      "loop": false
+    },
+    "New_SFX_Promotion": {
+      "start": 21,
+      "end": 23.61766439909297,
+      "loop": false
+    },
+    "New_SFX_Startup": {
+      "start": 25,
+      "end": 29.44922902494331,
+      "loop": false
+    },
+    "New_SFX_StartWeather": {
+      "start": 31,
+      "end": 31.98455782312925,
+      "loop": false
+    },
+    "Old_SFX_Bindy": {
+      "start": 33,
+      "end": 35.157165532879816,
+      "loop": false
+    },
+    "Old_SFX_Demotion": {
+      "start": 37,
+      "end": 37.752539682539684,
+      "loop": false
+    },
+    "Old_SFX_Error": {
+      "start": 39,
+      "end": 40.304149659863945,
+      "loop": false
+    },
+    "Old_SFX_Mouse_Click": {
+      "start": 42,
+      "end": 42.266235827664396,
+      "loop": false
+    },
+    "Old_SFX_Promotion": {
+      "start": 44,
+      "end": 45.10340136054422,
+      "loop": false
+    },
+    "Old_SFX_Talk_Purchase": {
+      "start": 47,
+      "end": 47.87473922902495,
+      "loop": false
+    },
+    "Old_SFX_Talk_Repair": {
+      "start": 49,
+      "end": 50.03324263038549,
+      "loop": false
+    },
+    "Old_SFX_Talk_Sell": {
+      "start": 52,
+      "end": 52.963628117913835,
+      "loop": false
+    },
+    "Old_SFX_Talk_StartWeather": {
+      "start": 54,
+      "end": 55.19580498866213,
+      "loop": false
+    },
+    "Old_SFX_Talk_WelcomeBack": {
+      "start": 57,
+      "end": 58.2771201814059,
+      "loop": false
+    },
+    "Old_SFX_TrackerDown": {
+      "start": 60,
+      "end": 60.309773242630385,
+      "loop": false
+    },
+    "Old_SFX_TrackerGray": {
+      "start": 62,
+      "end": 62.0656462585034,
+      "loop": false
+    },
+    "Old_SFX_TrackerUp": {
+      "start": 64,
+      "end": 64.19179138321995,
+      "loop": false
+    },
+    "SFX_Blue02_FutureUIComing": {
+      "start": 66,
+      "end": 66.5,
+      "loop": false
+    },
+    "SFX_Blue03_Crash": {
+      "start": 68,
+      "end": 69.75,
+      "loop": false
+    },
+    "SFX_House_Destroyed": {
+      "start": 71,
+      "end": 72.80941043083901,
+      "loop": false
+    },
+    "SFX_House_Rezoned": {
+      "start": 74,
+      "end": 75.80941043083901,
+      "loop": false
+    }
+  }
+}
