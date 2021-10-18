@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+    web1:
+        build: ./StormBroker
+        volumes:
+            - jobs:/jobs
+            - results:/results
+            - /etc/letsencrypt/live/${TARGET_URL}/fullchain.pem:/etc/fullchain.pem
+            - /etc/letsencrypt/live/${TARGET_URL}/privkey.pem:/etc/privkey.pem
+        command: http-server --port 443 -S -C /etc/fullchain.pem -K /etc/privkey.pem --proxy https://${TARGET_URL}
+        ports:
+            - 443:443
+    web2:
+        build: ./StormBroker
+        volumes:
+            - jobs:/jobs
+            - results:/results
+        command: http-server --port 80 --proxy https://${TARGET_URL}
+        ports:
+            - 80:80
+volumes:
+    jobs:
+    results:
