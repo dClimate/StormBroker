@@ -33,6 +33,7 @@ RUN apt-get install -y libsm6
 RUN apt-get install -y libxext6
 RUN apt-get install -y libxrender-dev
 RUN npm install --global http-server
+RUN npm install --global pm2
 
 # copy project
 COPY . $HOME
