@@ -1,24 +1,24 @@
 version: "3.9"
 
 services:
-    web1:
+    web:
         build: ./StormBroker
-        volumes:
-            - jobs:/jobs
-            - results:/results
-            - /etc/letsencrypt/live/${TARGET_URL}/fullchain.pem:/etc/fullchain.pem
-            - /etc/letsencrypt/live/${TARGET_URL}/privkey.pem:/etc/privkey.pem
-        command: pm2-runtime start http-server -- --port 443 -S -C /etc/fullchain.pem -K /etc/privkey.pem --proxy https://${TARGET_URL}
-        ports:
-            - 443:443
-    web2:
-        build: ./StormBroker
-        volumes:
-            - jobs:/jobs
-            - results:/results
-        command: pm2-runtime start http-server -- --port 80 --proxy https://${TARGET_URL}
+        command: pm2-runtime start http-server -- -a 0.0.0.0
+        expose:
+            - 8080
+        networks:
+            - backbone
+    nginx:
+        build: ./nginx
+        networks:
+            - backbone
         ports:
             - 80:80
-volumes:
-    jobs:
-    results:
+            - 443:443
+        volumes:
+            - /etc/letsencrypt/live/stormbroker.dclimate.net/fullchain.pem:/etc/fullchain.pem
+            - /etc/letsencrypt/live/stormbroker.dclimate.net/privkey.pem:/etc/privkey.pem
+
+networks:
+  backbone:
+    driver: bridge
